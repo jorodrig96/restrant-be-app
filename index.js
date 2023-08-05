@@ -3,11 +3,19 @@ require('dotenv').config();
 const express = require ('express')
 const app = express();
 
-app.get('/', (req, res) => {
-    console.log('Currently in my terminal route.');
-});
+app.use('/places', require('./controllers /places'));
 
 app.get('/', (req,res) => {
-    res.send('This is my home page')
-})
-app.listen(process.env.PORT);
+    res.send(`
+    <h1> Currently in my home route. </h1> `);
+});
+
+app.get('*', (req, res) => {
+    res.status(404).send(` 
+    <h1> ERROR 404, page does not exist! </h1> `
+    );
+});
+
+app.listen(process.env.PORT, () => {
+    console.log("Hello, this is your terminal.")
+});
