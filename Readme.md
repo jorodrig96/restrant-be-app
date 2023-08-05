@@ -3,7 +3,7 @@
 ## REST-Rant is an app where users can review restaurants. Did you love the food? Did you you dislike it? Go ahead and leave a comment!
 
 # This app will have: 
-- **Color schemes will be: Background: d1c5c5 Text color: 5b694f Extra color: still need to figure it out.**
+- **Color schemes will be: Background color: d1c5c5, Text color: 5b694f, Extra color: still need to figure it out.**
 - **A home screen with the name of the app and top right corner it will have the log in/sign up page link.**
 - **Once you click the log in/sign up page it will bring up a form where you either log in if you are already a user or if not sign up to create an account.**
 - **Page after will take you to your home screen.**
