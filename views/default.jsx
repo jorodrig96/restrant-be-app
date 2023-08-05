@@ -4,7 +4,7 @@ function Def(html) {
     return (
         <html>
             <head>
-                <title>Default Jsx Page</title>
+                <title>RestRant</title>
             </head>
             <body>
                 {html.children}
