@@ -2,17 +2,17 @@ const router = require('express').Router();
 
 router.get('/', (req,res) => {
     let places = [{
-        name: 'Daves Hot Chicken',
+        name: 'ShmackinBurger',
         city: 'Los Angeles',
         state: 'California',
         cuisines: 'Fried Chicken',
-        pic: '/images/daveshot.png'
+        pic: '/images/burger.jpg'
     }, {
-        name: 'Tian You Fang',
+        name: 'BombBurger',
         city: 'West Covina',
         state: 'California',
         cuisines: 'Chinese',
-        pic: '/images/baobuns.jpg'
+        pic: '/images/burgerwmayo.jpg'
     }];
     res.render('places/index', { places });
 });
