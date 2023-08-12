@@ -3,6 +3,7 @@ const Def = require('../default');
 
 function index (data) {
     let placesFormatted = data.places.map((place) => {
+
         return (
             <div className= "col-sm-6">
                 <h2> {place.name} </h2>
@@ -25,9 +26,17 @@ function index (data) {
                 {placesFormatted}
                 </div>
             </main>
+            <div className="redirect">
+                <a href= "places/new">
+                    <button>Add new Place</button>
+                </a>
+            </div>
+            <div className="redirect">
                 <a href= "/">
                 <button>Home Page</button>
-                </a>         
+                </a>      
+            </div>
+            
         </Def>
     );
 };

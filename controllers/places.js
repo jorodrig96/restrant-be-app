@@ -1,24 +1,18 @@
 const router = require('express').Router();
+const places = require("../models/places");
 
 router.get("/new", (req,res) => {
     res.render("places/new");
 });
 
 router.get('/', (req,res) => {
-    let places = [{
-        name: 'ShmackinBurger',
-        city: 'Los Angeles',
-        state: 'California',
-        cuisines: 'Fried Chicken',
-        pic: '/images/burger.jpg'
-    }, {
-        name: 'BombBurger',
-        city: 'West Covina',
-        state: 'California',
-        cuisines: 'Chinese',
-        pic: '/images/burgerwmayo.jpg'
-    }];
-    res.render('places/index', { places });
+    res.render("places/index", { places });
 });
+
+router.post("/", (req, res) => {
+    places.push(req.body);
+    res.redirect("/places");
+    }
+);
 
 module.exports = router;
