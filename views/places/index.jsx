@@ -25,9 +25,9 @@ function index (data) {
                 {placesFormatted}
                 </div>
             </main>
-            <a href= "/places">
-                    <button className= "btn-primary">Places Page. Imports from /views / places / indexjsx. </button>
-                </a>
+                <a href= "/">
+                <button>Home Page</button>
+                </a>         
         </Def>
     );
 };
